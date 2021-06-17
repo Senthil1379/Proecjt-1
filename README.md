@@ -87,11 +87,11 @@ Filebeat - Filebeat detects changes to the filesystem. We are using this to moni
 Metricbeat - Metricbeat detects changes in system metrics, such as CPU usage. We use it to detect SSH login attempts, failed sudo escalations, and CPU/RAM statistics.
 The Ansible Playbooks used can be found here
 
-ansible-playbook elk-playbook.yml
+ansible-playbook elk-playbook.yml(https://github.com/Senthil1379/Project-1/blob/main/ansible/elk-playbook.yml)
 
-ansible-playbook filebeat-playbook.yml
+ansible-playbook filebeat-playbook.yml(https://github.com/Senthil1379/Project-1/blob/main/ansible/filebeat-playbook.yml)
 
-Ansible-playbook metricbeat-playbook.yml
+Ansible-playbook metricbeat-playbook.yml(https://github.com/Senthil1379/Project-1/blob/main/ansible/metricbeat-playbook.yml)
 
 Using the Playbook In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:
