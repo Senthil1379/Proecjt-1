@@ -15,7 +15,7 @@ This document contains the following details:
 
 Description of the Topology
 
-Access Policies
+**Access Policies**
 
 ELK Configuration
 
