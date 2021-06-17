@@ -65,7 +65,7 @@ Ansible playbooks are used to install the ELK stack container on the ELK server 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
 
-<img src="https://github.com/Senthil1379/Project-1/blob/main/Images/dokcer_ps_out.PNG">
+<img src="https://github.com/Senthil1379/Project-1/blob/main/Images/dokcer_ps_output.PNG">
 
 Target Machines & Beats This ELK server is configured to monitor the following machines:
 
