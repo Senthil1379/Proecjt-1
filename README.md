@@ -107,16 +107,21 @@ Using the Playbook In order to use the playbook, you will need to have an Ansibl
 SSH into the control node and follow the steps below:
 
 Copy the .yml files to /etc/ansible directory.
+
 Update the hosts file to be as follows. This will assign the VM servers to their server groups for the Ansible Playbooks.
+
    [webservers]
     10.0.0.5
     10.0.0.6
     10.0.0.7
    [elkservers]
     10.1.0.4
+    
 Run the playbook, and navigate to Kibana to check that the installation worked as expected.
+
 cd /etc/ansible
 ansible-playbook elk-playbook.yml
 ansible-playbook filebeat-playbook.yml
 Ansible-playbook metricbeat-playbook.yml
+
 Then navigate to curl http://184.145.107.194/app/kibana#/home (Kibana) to check that the installation worked as expected.
