@@ -1,7 +1,7 @@
-README.md
 Azure Cloud Network: Here, you will find a collection of MacOS, Linux, and Ansible scripts used for the Cyber Security Boot Camp. Scripts are used for the following: -Configure and manage Azure virtual machines -Create and deploy Docker containers -Deploy Ansible playbooks to manage virtual machines -Launch ELK Stack The final setup includes a jumpbox hosting ansible container which connects to three seperate virtual machines.There are two machines (for redundancy) hosting DVWA and one server hosting ELK Stack.The above set up is protected by a firewall configured with a whitelist and secured ports.
 
 Automated ELK Stack Deployment
+
 The files in this repository were used to configure the network depicted below.
 
 
@@ -35,6 +35,13 @@ Metricbeat detects changes in system metrics such as CPU usage. We use it to det
 
 The configuration details of each machine may be found below.
 
+Name	Function	IP Address	Operating System
+Jump Box	Gateway	10.0.0.4	Linux
+Web-1	Server	10.0.0.5	Linux
+Web-2	Server	10.0.0.6	Linux
+Web-3	Server	10.0.0.7	Linux
+ELK Server	Monitoring	10.1.0.4	Linux
+![image](https://user-images.githubusercontent.com/80077555/122315052-45474d00-cee7-11eb-960b-1bb3009ea82d.png)
 
 
 Access Policies
@@ -45,6 +52,15 @@ Only the Jumpbox Provisioner machine can accept connections from the Internet. A
 Machines within the network can only be accessed by peer servers. The Jumpbox Provisioner connects via SSH to the Webservers (Web 1, Web 2 & Web 3) and the ELK Server. The Web Server machines send logs to the ELK Server to be forwarded for indexing.
 
 A summary of the access policies in place can be found in the table below.
+
+Name	Function	IP Address	Operating System
+Jump Box	Gateway	10.0.0.4	Linux
+Web-1	Server	10.0.0.5	Linux
+Web-2	Server	10.0.0.6	Linux
+Web-3	Server	10.0.0.7	Linux
+ELK Server	Monitoring	10.1.0.4	Linux
+![image](https://user-images.githubusercontent.com/80077555/122315046-424c5c80-cee7-11eb-94e6-2265a60549bb.png)
+
 
 
 
