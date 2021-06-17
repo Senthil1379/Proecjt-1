@@ -47,8 +47,15 @@ Only the Jumpbox Provisioner machine can accept connections from the Internet. A
 Machines within the network can only be accessed by peer servers. The Jumpbox Provisioner connects via SSH to the Webservers (Web 1, Web 2 & Web 3) and the ELK Server. The Web Server machines send logs to the ELK Server to be forwarded for indexing.
 
 A summary of the access policies in place can be found in the table below.
+Name	Publicly Accessible	Allowed IP Address
+Jump Box	Yes	10.0.0.1-254
+Web-1	No	10.0.0.1-254
+Web-2	No	10.0.0.1-254
+Web-3	No	10.0.0.1-254
+ELK Server	No	10.1.0.0-254
+![image](https://user-images.githubusercontent.com/80077555/122317518-b0931e00-ceeb-11eb-9f27-492eaf0deddb.png)
 
-![image](https://user-images.githubusercontent.com/80077555/122315247-aec75b80-cee7-11eb-83bc-8b24f5a4c68c.png)
+
 
 
 Elk Configuration
