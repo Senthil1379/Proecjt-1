@@ -4,7 +4,8 @@ Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/Senthil1379/Project-1/tree/main/Images/TopolgyDiagram.PNG
+<img src="https://github.com/Senthil1379/Project-1/blob/main/Images/Topology.PNG">
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the .yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -14,7 +15,7 @@ This document contains the following details:
 
 Description of the Topology
 
-Access Policies
+**Access Policies**
 
 ELK Configuration
 
@@ -35,12 +36,6 @@ Metricbeat detects changes in system metrics such as CPU usage. We use it to det
 
 The configuration details of each machine may be found below.
 
-Name	Function	IP Address	Operating System
-Jump Box	Gateway	10.0.0.4	Linux
-Web-1	Server	10.0.0.5	Linux
-Web-2	Server	10.0.0.6	Linux
-Web-3	Server	10.0.0.7	Linux
-ELK Server	Monitoring	10.1.0.4	Linux
 ![image](https://user-images.githubusercontent.com/80077555/122315052-45474d00-cee7-11eb-960b-1bb3009ea82d.png)
 
 
@@ -53,13 +48,7 @@ Machines within the network can only be accessed by peer servers. The Jumpbox Pr
 
 A summary of the access policies in place can be found in the table below.
 
-Jump Box	Yes	10.0.0.1-254
-Web-1	No	10.0.0.1-254
-Web-2	No	10.0.0.1-254
-Web-3	No	10.0.0.1-254
-ELK Server	No	10.1.0.0-254
-![image](https://user-images.githubusercontent.com/80077555/122315247-aec75b80-cee7-11eb-83bc-8b24f5a4c68c.png)
-
+![image](https://user-images.githubusercontent.com/80077555/122317518-b0931e00-ceeb-11eb-9f27-492eaf0deddb.png)
 
 
 
