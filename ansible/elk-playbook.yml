@@ -32,7 +32,7 @@
           state: present
           reload: yes
 
-      # Use docker_container module
+      # Use docker_container module.
       - name: download and launch a docker elk docker container
         docker_container:
           name: elk
