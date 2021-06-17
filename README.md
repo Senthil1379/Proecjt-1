@@ -53,13 +53,13 @@ Machines within the network can only be accessed by peer servers. The Jumpbox Pr
 
 A summary of the access policies in place can be found in the table below.
 
-Name	Function	IP Address	Operating System
-Jump Box	Gateway	10.0.0.4	Linux
-Web-1	Server	10.0.0.5	Linux
-Web-2	Server	10.0.0.6	Linux
-Web-3	Server	10.0.0.7	Linux
-ELK Server	Monitoring	10.1.0.4	Linux
-![image](https://user-images.githubusercontent.com/80077555/122315046-424c5c80-cee7-11eb-94e6-2265a60549bb.png)
+Jump Box	Yes	10.0.0.1-254
+Web-1	No	10.0.0.1-254
+Web-2	No	10.0.0.1-254
+Web-3	No	10.0.0.1-254
+ELK Server	No	10.1.0.0-254
+![image](https://user-images.githubusercontent.com/80077555/122315247-aec75b80-cee7-11eb-83bc-8b24f5a4c68c.png)
+
 
 
 
